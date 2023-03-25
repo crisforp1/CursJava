@@ -5,12 +5,15 @@ public class Tester {
 	private String name;//variabila de instanta
 	private int ratePerHour;
 	
-	public String getName() {
+	
+	public String getName() {	
 		return name;
 	}
-	public void setName(String name)  {//variabila locala)
+	
+	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public int getRatePerHour() {
 		return ratePerHour;
 	}

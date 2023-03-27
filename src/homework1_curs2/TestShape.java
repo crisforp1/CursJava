@@ -12,8 +12,8 @@ The area of the circle is : < rezultat >
 In TestShape nu avem metoda de System.out.print....
 nu avem variabile la nivel de clasa in nici una dintre clase
 nu avem getters si setters pt ca nu avem variabile la nivel de clasa
-
  */
+
 public class TestShape {
 
 	public static void main(String[] args) {

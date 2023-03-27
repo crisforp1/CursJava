@@ -16,7 +16,7 @@ public class WageCalculator {
 		
 		WageCalculator obj =  new WageCalculator();
 		
-		System.out.println("Salariul lui " +obj1.getName() + " este:" + obj.calculateSalary(obj1.getRatePerHour()) );
+		System.out.println("Salariul lui " + obj1.getName() + " este:" + obj.calculateSalary(obj1.getRatePerHour()) );
 		
 	}
 	

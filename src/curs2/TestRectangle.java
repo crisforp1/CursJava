@@ -7,11 +7,11 @@ public class TestRectangle {
 		Rectangle rectangle =  new Rectangle();
 		rectangle.setLenght(5);
 		rectangle.setWidth(3);
-		System.out.println(rectangle.calcuateArea());
+		System.out.println(rectangle.calculateArea());
 		
 		
 		Rectangle rectangle2 =  new Rectangle(5, 5);
-		System.out.println(rectangle2.calcuateArea());
+		System.out.println(rectangle2.calculateArea());
 
 		
 		

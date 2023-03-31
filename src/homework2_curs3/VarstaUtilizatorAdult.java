@@ -33,7 +33,9 @@ public class VarstaUtilizatorAdult {
 			System.out.println("Esti adult");
 		} else if (age > 65) {
 			System.out.println("Esti batran");
-		}
+		} else {
+            System.out.println("Varsta invalida!");
+       }
 
 	}
 

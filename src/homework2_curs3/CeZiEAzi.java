@@ -27,8 +27,8 @@ public class CeZiEAzi {
 	}
 
 	public static void decideDayWeek() {
-		if (number <= 0) {
-			System.out.println("Te rog sa introduci un numar mai mare ca 0");
+		 if (number <= 0 || number >= 8) {
+             System.out.println("Te rog sa introduci un numar mai mare ca 0 sau mai mic ca 8");
 		} else if (number == 1) {
 			System.out.println("Astazi este luni");
 		} else if (number == 2) {

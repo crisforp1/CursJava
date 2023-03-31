@@ -22,12 +22,12 @@ package homework1_curs2;
 public class Shape {
 
 	public void calculateSquareArea(int length) {
-		System.out.println("The area of the square is :" + length * length);
+		System.out.println("The area of the square is: " + length * length);
 
 	}
 
 	public void calculateRectangleArea(int length, int width) {
-		System.out.println("The area of the rectangle is :" + length * width);
+		System.out.println("The area of the rectangle is: " + length * width);
 	}
 
 	public Shape(int length) {
@@ -39,8 +39,8 @@ public class Shape {
 	}
 
 	public Shape(double radius) {
-		// Nu am stiut exact cum sa folosesc Math.PI
-		System.out.println("The area of the circle is :" + radius * radius * 22 / 7);
+		// In loc de Math.PI se poate folosi fractia 22 / 7
+		System.out.printf("The area of the circle is: " + "%.2f", radius * radius * Math.PI);
 	}
 
 }

@@ -31,9 +31,11 @@ public class TestCar {
 		 * 1. Dupa rulare vom avea 3 printuri in consola. 
 		 * 2. Sunt corecte conform executiei din TestCar? 
 		 * 
-		 * Banuiesc ca are legatura cu variabilele statice si cu
-		 * metoda statica carDetails() din clasa Car. Nu imi este clar daca sunt sau nu
-		 * corecte rezultatele celor 3 printuri din clasa TestCar!
+		 *Sunt corecte printurile pentru ca desi chemi pe 2 obiecte diferite, 
+		 *din cauza faptului ca sunt statice, ele nu sunt associate cu obiectul clasei,
+		 *astfel ca ai acelasi print pe 2 obiecte diferite.
+		 *Fiind static vor avea aceasi valoare pentru toate obiectele.
+		 * 	
 		 * 
 		 */
 

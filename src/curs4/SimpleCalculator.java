@@ -1,45 +1,66 @@
-package curs4;
-import java.util.*;
-// facem un calculator simplu pentru operatiile de baza
-//(+) adunare
 
-//intebam user numarul 1
-//intrebam operatorul care vrea sa-l introduca
-//
+package curs4;
+
+import java.util.Scanner;
+
+/*
+ * Facem un calculator simplu pentru opertiile de baza : 
+ * +(adunare)
+ * - (scadere)
+ * * (inmultire)
+ * / (impartire)
+ * 
+ * Intrebam userul primul nr
+ * intrebam operatorul pe care vrea sa il foloseasca
+ * intrebam numarul 2
+ * Printam sub forma : EX: 2 + 2 = 4
+ * 
+ */
+
+//masina     masina.charAt(0) == 'm'
+//012345
+
 public class SimpleCalculator {
+
 	int num1, num2, result;
 	char operator;
-	
+
 	public void askTheUser() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Introdu primul nr: ");
+		System.out.println("Te rog introdu primul numar :");
 		num1 = scan.nextInt();
-		System.out.println("Introdu operatorul: ");
+		System.out.println("Te rog introdu operatorul :");
 		operator = scan.next().charAt(0);
-		System.out.println("Introdu al doilea nr: ");
+		System.out.println("Te rog introdu al doilea numar :");
 		num2 = scan.nextInt();
-		
 	}
-	
+
 	public void calculateValues() {
 		askTheUser();
-		if(operator == '+') {
+
+		if (operator == '+') {
 			result = num1 + num2;
-			System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+			printResult();
+
 		} else if (operator == '-') {
 			result = num1 - num2;
-			System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+			printResult();
+
 		} else if (operator == '*' || operator == 'x') {
 			result = num1 * num2;
-			System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
-		}  else if (operator == '/' || operator ==':') {
+			printResult();
+
+		} else if (operator == '/' || operator == ':') {
 			result = num1 / num2;
-			System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+			printResult();
 		} else {
-				System.out.println("Te rog sa introduci doar unul din cele 4 simboluri");
-				}
+			System.out.println("Te rog sa introduci doar : * / + -");
 		}
-		
 	}
 
+	public void printResult() {
+		System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
 
+	}
+
+}

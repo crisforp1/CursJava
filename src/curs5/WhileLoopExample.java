@@ -1,5 +1,7 @@
 package curs5;
+
 import java.util.*;
+
 /*
  * un program care calculeaza salariul pe o saptamana
  * intrebam userul cate ore a lucrat
@@ -21,18 +23,14 @@ public class WhileLoopExample {
 //		while (oreLucrate >= 1 && oreLucrate <= 40) {
 //			System.out.println("Salariul platit este: " + oreLucrate*ratePerHour);
 //		}
-		
+
 		while (oreLucrate < 1 || oreLucrate > 40) {
 			System.out.println("Te rog sa introduci un numar valid (intre 1 si 40 de ore)");
 			oreLucrate = scan.nextInt();
-			
+
 		}
-		
-		System.out.println("Salariul platit este: " + oreLucrate*ratePerHour);
-		
-		
-		
-		
+
+		System.out.println("Salariul platit este: " + oreLucrate * ratePerHour);
 
 	}
 

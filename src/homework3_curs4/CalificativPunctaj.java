@@ -14,7 +14,7 @@ public class CalificativPunctaj {
 	 * primit : Bine” Daca a luat calificativ S printam : “Ai primit : Suficient”
 	 * 
 	 */
-	
+
 	int userPoints;
 
 	public void askUserPoints() {
@@ -28,5 +28,20 @@ public class CalificativPunctaj {
 		String checkUserCalificativ = (userPoints >= 90) ? "FoarteBine" : (userPoints >= 80) ? "Bine" : "Suficient";
 		System.out.println("Ai primit: " + checkUserCalificativ);
 	}
+
+// Varianta domnului instructor
+
+//	public void userCalificativ() { 
+//
+//		askUserPoints();
+//
+//		String checkUserCalificativ = (userPoints >= 90) ? "FB" : (userPoints >= 80) ? "B" : "S";
+//
+//		String printMessage = checkUserCalificativ.equals("FB") ? "FoarteBine"
+//				: checkUserCalificativ.equals("B") ? "Bine" : "Suficient";
+//
+//		System.out.println("Ai primit: " + printMessage);
+//
+//	}
 
 }

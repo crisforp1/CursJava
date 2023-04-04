@@ -1,5 +1,7 @@
 package curs5;
+
 import java.util.*;
+
 /*
  * cerem un string de la tatstatura
  * cautam in stringul respectiv daca contine litera A
@@ -15,15 +17,15 @@ public class LetterSearch {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Te rog sa introduci un text: ");
 		String text = scan.next();
-		//System.out.println(text.length());
+		// System.out.println(text.length());
 		int counter = 0;
 		for (int i = 0; i < text.length(); i++) {
 			if (text.charAt(i) == 'A') {
 				counter++;
-				//ar fi fain cu break daca gasea prima litera A
+				// ar fi fain cu break daca gasea prima litera A
 			}
 		}
-		
+
 		String result = counter > 0 ? "Litera A exista de " + counter + " ori" : "Litera A nu exista";
 		System.out.println(result);
 

@@ -21,17 +21,47 @@ public class CuvantPalindrom {
 	}
 
 	public static void cuvantPalindrom(String word) {
+		String reversedWord = "";
 		for (int i = word.length() - 1; i >= 0; i--) {
-			if (word.charAt(i) == word.charAt(word.length() - 1 - i)) {
-				System.out.println(word + " este un palindrom.");
-				break;
-
-			} else {
-				System.out.println(word + " nu este un palindrom.");
-				break;
-			}
-
+			reversedWord += word.charAt(i);
 		}
+
+		if (word.equals(reversedWord)) {
+			System.out.println(word + " is a palindrom.");
+		} else {
+			System.out.println(word + " is not a palindrom.");
+		}
+
 	}
+
+	/*
+	 * public static void cuvantPalindrom(String word) { //solutia trainerului
+	 * 
+	 * boolean isPalindrom = true;
+	 * 
+	 * for (int i = word.length() - 1; i >= 0; i--) {
+	 * 
+	 * if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
+	 * 
+	 * isPalindrom = false;
+	 * 
+	 * break;
+	 * 
+	 * }
+	 * 
+	 * }
+	 * 
+	 * if (isPalindrom) {
+	 * 
+	 * System.out.println(word + " este un palindrom.");
+	 * 
+	 * } else {
+	 * 
+	 * System.out.println(word + " nu este un palindrom.");
+	 * 
+	 * }
+	 * 
+	 * }
+	 */
 
 }
